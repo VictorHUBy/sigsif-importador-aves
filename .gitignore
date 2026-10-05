@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs e temporários
+*.log
+npm-debug.log*
+
+# Dependências (se no futuro houver)
+node_modules/
+
+# Build / pacotes de extensão
+*.crx
+*.pem
+*.zip
+dist/
+build/
