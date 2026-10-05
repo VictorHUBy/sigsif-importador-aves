@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "SIGSIF Importador - Aves",
+  "version": "2.0.0",
+  "description": "Lança diagnósticos de aves (condenação total/parcial) na tela Alterar Mapa de Abate do SIGSIF a partir de texto colado.",
+  "minimum_chrome_version": "111",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.agricultura.gov.br/*",
+        "http://*.agricultura.gov.br/*",
+        "https://*.agro.gov.br/*",
+        "http://*.agro.gov.br/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "world": "MAIN"
+    }
+  ]
+}

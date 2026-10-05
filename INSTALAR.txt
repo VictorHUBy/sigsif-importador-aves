@@ -1,0 +1,31 @@
+SIGSIF IMPORTADOR - AVES (extensão para Edge e Chrome)
+
+Não é programa, não é .exe: roda dentro do navegador, na tela do SIGSIF.
+Não pede administrador, não abre porta de rede, não usa firewall.
+
+INSTALAR (uma vez só)
+1. Extraia este zip numa pasta que você NÃO vai apagar
+   (ex.: Documentos\SIGSIF_Importador). A extensão lê os arquivos dessa pasta.
+2. Edge:   digite edge://extensions   na barra de endereço
+   Chrome: digite chrome://extensions
+3. Ligue o "Modo do desenvolvedor".
+4. Clique em "Carregar sem pacote" (Edge) ou "Carregar sem compactação" (Chrome)
+   e escolha a pasta extraída (a que tem o arquivo manifest.json).
+
+USAR
+1. Entre no SIGSIF, abra o lote e a tela "Alterar Mapa de Abate".
+2. No canto inferior direito aparece o botão azul "SIGSIF Importador". Clique nele.
+3. Cole o texto (Lote / Aves total / DIAGNÓSTICO / Condenação total / Condenação parcial)
+   e clique em "Ler texto".
+4. Use "Testar" (não grava), depois "Validar" (confere se os diagnósticos existem no lote)
+   e por fim "Executar". "Parar" interrompe após o passo atual.
+5. Confira na tela e clique em "Confirmar mapa" (ou marque a caixa para confirmar ao final).
+
+AVISOS NORMAIS
+- Ao abrir o navegador, ele pode avisar sobre "extensões no modo desenvolvedor".
+  É esperado para extensões instaladas por pasta. Pode manter ligada.
+- Se o botão azul não aparecer: o painel só surge na tela "Alterar Mapa de Abate".
+  Se mesmo assim não aparecer, o endereço do SIGSIF pode ser diferente. Abra manifest.json,
+  acrescente o domínio na lista "matches" (ex.: "https://*.seudominio.gov.br/*"),
+  salve e, na página de extensões, clique no botão de recarregar da extensão.
+- Em computador gerenciado por TI, a política pode bloquear extensões por pasta.
