@@ -23,3 +23,8 @@ node_modules/
 *.zip
 dist/
 build/
+
+# Arquivos de ambiente
+.env
+.env.*
+!.env.example
